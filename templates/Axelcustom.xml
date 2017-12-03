@@ -1,0 +1,49 @@
+<templateSet group="Axelcustom">
+  <template name="hets" value="@Override&#10;public boolean equals(Object other) {&#10;  return EqualsBuilder.reflectionEquals(this, other);&#10;}&#10;&#10;@Override&#10;public int hashCode() {&#10;  return HashCodeBuilder.reflectionHashCode(this);&#10;}&#10;&#10;@Override&#10;public String toString() {&#10;  return ToStringBuilder.reflectionToString(this);&#10;}&#10;" description="Creates commons.lang3 hashCode equals and toString" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ctl" value="Collectors.toList()" description="Collectors.toList()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@Test&#10;public void $NAME$() {&#10;  $END$&#10;}" description="Creates a test method with a single assertion" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="at" value="org.junit.Assert.assertThat($FIRST$, org.hamcrest.core.Is.is($END$));&#10;" description="assertThat with the Is.is matcher" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="range" value="IntStream.range(0, $END$)" description="initializes IntStream.range" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bef" value="@Before&#10;public void before_each() {&#10;  $END$&#10;}&#10;" description="JUnits @Before beforeEach" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cts" value="Collectors.toSet()" description="Collectors.toSet()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="att" value="org.assertj.core.api.Assertions.assertThatThrownBy(() -&gt; {&#10;  $END$&#10;}).isInstanceOf(Exception.class);&#10;" description="assertjs assertThatThrownBy" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="hi" value="org.hamcrest.Matchers.hasItem($END$)" description="Matchers.hasItem" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
