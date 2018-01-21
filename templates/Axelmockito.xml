@@ -1,0 +1,24 @@
+<templateSet group="Axelmockito">
+  <template name="mv" value="org.mockito.Mockito.verify($FIRST$).$END$" description="Mockito.verify" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mg" value="org.mockito.BDDMockito.given($FIRST$).$END$" description="Mockito.given" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mn" value="org.mockito.Mockito.never($END$)" description="Mockito.never" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mrw" value="@RunWith(MockitoJUnitRunner.class)" description="@RunWith(MockitoJUnitRunner.class)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
