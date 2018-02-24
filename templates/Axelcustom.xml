@@ -1,5 +1,5 @@
 <templateSet group="Axelcustom">
-  <template name="hets" value="@Override&#10;public boolean equals(Object other) {&#10;  return EqualsBuilder.reflectionEquals(this, other);&#10;}&#10;&#10;@Override&#10;public int hashCode() {&#10;  return HashCodeBuilder.reflectionHashCode(this);&#10;}&#10;&#10;@Override&#10;public String toString() {&#10;  return ToStringBuilder.reflectionToString(this);&#10;}&#10;" description="Creates commons.lang3 hashCode equals and toString" toReformat="false" toShortenFQNames="true">
+  <template name="hets" value="@Override&#10;public boolean equals(Object other) {&#10;  return org.apache.commons.lang3.builder.EqualsBuilder.reflectionEquals(this, other);&#10;}&#10;&#10;@Override&#10;public int hashCode() {&#10;  return org.apache.commons.lang3.builder.HashCodeBuilder.reflectionHashCode(this);&#10;}&#10;&#10;@Override&#10;public String toString() {&#10;  return org.apache.commons.lang3.builder.ToStringBuilder.reflectionToString(this);&#10;}&#10;" description="Creates commons.lang3 hashCode equals and toString" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -26,7 +26,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="bef" value="@Before&#10;public void before_each() {&#10;  $END$&#10;}&#10;" description="JUnits @Before beforeEach" toReformat="false" toShortenFQNames="true">
+  <template name="bef" value="@org.junit.Before&#10;public void before_each() {&#10;  $END$&#10;}&#10;" description="JUnits @Before beforeEach" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
