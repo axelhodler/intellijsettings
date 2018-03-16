@@ -56,4 +56,14 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="sout" value="System.out.println($END$);" description="System.out.println" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ant" value="org.assertj.core.api.Assertions.assertThatCode(() -&gt; {&#10;  $END$&#10;}).doesNotThrowAnyException();&#10;" description="assertjs assertThatCode doesNotThrowAnyException" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
