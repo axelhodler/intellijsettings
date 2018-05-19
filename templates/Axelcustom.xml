@@ -4,7 +4,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="ctl" value="Collectors.toList()" description="Collectors.toList()" toReformat="false" toShortenFQNames="true">
+  <template name="ctl" value="java.util.stream.Collectors.toList()" description="Collectors.toList()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -31,7 +31,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="cts" value="Collectors.toSet()" description="Collectors.toSet()" toReformat="false" toShortenFQNames="true">
+  <template name="cts" value="java.util.stream.Collectors.toSet()" description="Collectors.toSet()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -46,12 +46,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="es" value="Collections.emptySet()" description="Collections.emptySet()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <template name="es" value="java.util.Collections.emptySet()" description="Collections.emptySet()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="el" value="Collections.emptyList()" description="Collections.emptyList()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <template name="el" value="java.util.Collections.emptyList()" description="Collections.emptyList()" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
