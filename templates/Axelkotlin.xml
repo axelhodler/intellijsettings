@@ -16,4 +16,10 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="pt" value="@org.junit.jupiter.api.TestInstance(TestInstance.Lifecycle.PER_CLASS)&#10;class SampleTest {&#10;&#10;    private fun testDataProvider() = Stream.of(&#10;        TestData(input = &quot;true&quot;, expected = &quot;expected&quot;),&#10;    )&#10;&#10;    @org.junit.jupiter.params.ParameterizedTest&#10;    @org.junit.jupiter.params.provider.MethodSource(&quot;testDataProvider&quot;)&#10;    fun `$NAME$`(testData: TestData) {&#10;        $END$&#10;    }&#10;&#10;    data class TestData(&#10;        val input: String,&#10;        val expected: String&#10;    )&#10;}" description="Junit5 ParametrizedTest" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
