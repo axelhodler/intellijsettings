@@ -33,4 +33,9 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="att" value="org.assertj.core.api.Assertions.assertThatThrownBy {&#10;    $END$&#10;}.isInstanceOf(Exception::class.java)&#10;" description="assertThatThrows" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
