@@ -6,4 +6,4 @@ located in
 
 or
 
-~/Library/Preferences/IntelliJIdea2018.3/templates
+~/Library/Preferences/IntelliJIdea2019.2/templates
