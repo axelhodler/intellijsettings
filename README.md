@@ -1,9 +1,5 @@
 #
 
-located in
+Using the templates
 
-~/Library/Preferences/IdeaIC2018.3/templates
-
-or
-
-~/Library/Preferences/IntelliJIdea2019.2/templates
+cp -R templates ~/Library/Application\ Support/JetBrains/IntelliJIdea2021.1/
